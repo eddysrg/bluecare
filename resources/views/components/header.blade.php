@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <nav class="bg-[#0A125E] lg:mt-3 flex justify-between items-center  py-3 lg:py-8 px-5 lg:px-12">
+    <nav class="bg-[#0A125E] lg:mt-3 flex justify-between items-center  py-3 lg:py-8 px-5 lg:px-12 relative">
 
         <i class="lg:hidden text-4xl text-white fa-solid fa-bars"></i>
 
@@ -73,6 +73,48 @@
 
             <li class="text-xs py-3 px-5 bg-[#0144E8] rounded-lg">
                 <a href="">Iniciar Sesión</a>
+            </li>
+        </ul>
+
+        <ul
+            class="nav text-white uppercase font-medium absolute bg-[#0144E8] z-20 p-3 py-8 w-full top-full left-0 space-y-6">
+            <li class="link-mb">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href=" {{route('home')}}">Inicio</a>
+            </li>
+
+            <li class="link-mb">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="">Exp. Clínico</a>
+            </li>
+
+            <li class="link-mb">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="">Medical View System</a>
+            </li>
+
+            <li>
+                <ul class="space-y-6 text-sm pl-5">
+                    <li>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <a href="">Nivel 1</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <a href="">Nivel 2</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="link-mb">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="{{route('lyrium')}}">Lyrium</a>
+            </li>
+
+            <li class="link-mb">
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="">Productos</a>
             </li>
         </ul>
 
