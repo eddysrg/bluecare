@@ -19,6 +19,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/lyrium', [PageController::class, 'lyrium'])->name('lyrium');
 Route::get('/healthcare/{nivel}', [PageController::class, 'healthcare'])->name('healthcare');
+Route::get('/medical-view-system', [PageController::class, 'mvs'])->name('mvs');
+
+
+Route::get('/pruebas', function () {
+    return view('pages.pruebas');
+});
 
 
 Route::get('/dashboard', function () {

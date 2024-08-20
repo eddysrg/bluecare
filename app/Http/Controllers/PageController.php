@@ -29,4 +29,16 @@ class PageController extends Controller
 
         return view('pages.healthcare');
     }
+
+    public function mvs()
+    {
+        $routeName = request()->route()->getName();
+        $json = Storage::get('links.json');
+        $links = json_decode($json, true);
+        $link = $links[$routeName] ?? [];
+
+        session($link);
+
+        return view('pages.mvs');
+    }
 }

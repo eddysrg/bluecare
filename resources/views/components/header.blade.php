@@ -50,25 +50,75 @@
 
         <i class="lg:hidden text-4xl text-white fa-solid fa-bars"></i>
 
-        <ul class="hidden text-white uppercase font-medium lg:flex lg:items-center lg:gap-8">
-            <li>
+        <ul class="navBar hidden text-white uppercase font-medium lg:flex lg:items-center lg:gap-8">
+            <li class="link">
                 <a href="{{route('home')}}">Inicio</a>
             </li>
 
-            <li>
-                <a href="">Exp. Clínico</a>
+            <li class="link">
+                <i class="fa-solid fa-chevron-right mr-2 rotate-0"></i>
+                <p class="inline cursor-pointer">Exp. Clínico</p>
             </li>
 
-            <li>
-                <a href="">Medical View System</a>
+            <li class="hidden submenu-exp absolute top-full left-28 z-20 bg-[#0A125E] w-40 p-5">
+                <ul class="space-y-6 text-sm pl-5">
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="{{route('healthcare', ['nivel' => 'nivel-uno'])}}">Nivel 1</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="{{route('healthcare', ['nivel' => 'nivel-dos'])}}">Nivel 2</a>
+                    </li>
+                </ul>
             </li>
 
-            <li>
+            <li class="link">
+                <a href="{{route('mvs')}}">Medical View System</a>
+            </li>
+
+            <li class="link">
                 <a href="{{route('lyrium')}}">Lyrium</a>
             </li>
 
-            <li>
-                <a href="">Productos</a>
+            <li class="link">
+                <i class="fa-solid fa-chevron-right mr-2 rotate-0"></i>
+                <p class="inline cursor-pointer">Productos</p>
+            </li>
+
+            <li class="hidden submenu-pro absolute top-full left-[35rem] z-20 bg-[#0A125E] w-60 p-5">
+                <ul class="space-y-6 text-sm pl-5">
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Laboratorio</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Ingresos</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Medical View System</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Odontología</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Nutrición</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Ginecología</a>
+                    </li>
+                </ul>
             </li>
 
             <li class="text-xs py-3 px-5 bg-[#0144E8] rounded-lg">
@@ -76,45 +126,81 @@
             </li>
         </ul>
 
+        {{-- Responsive navbar --}}
+
         <ul
-            class="nav text-white uppercase font-medium absolute bg-[#0144E8] z-20 p-3 py-8 w-full top-full left-0 space-y-6">
+            class="nav hidden text-white uppercase font-medium absolute bg-[#0144E8] z-20 p-3 py-8 w-full top-full left-0 space-y-6">
             <li class="link-mb">
-                <i class="fa-solid fa-chevron-right"></i>
+                <i class="fa-solid fa-chevron-right mr-2"></i>
                 <a href=" {{route('home')}}">Inicio</a>
             </li>
 
             <li class="link-mb">
-                <i class="fa-solid fa-chevron-right"></i>
-                <a href="">Exp. Clínico</a>
+                <i class="fa-solid fa-chevron-right mr-2 rotate-0"></i>
+                <p class="inline">Exp. Clínico</p class="inline">
             </li>
 
-            <li class="link-mb">
-                <i class="fa-solid fa-chevron-right"></i>
-                <a href="">Medical View System</a>
-            </li>
-
-            <li>
+            <li class="hidden submenu-resp-exp">
                 <ul class="space-y-6 text-sm pl-5">
                     <li>
-                        <i class="fa-solid fa-chevron-right"></i>
-                        <a href="">Nivel 1</a>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="{{route('healthcare', ['nivel' => 'nivel-uno'])}}">Nivel 1</a>
                     </li>
 
                     <li>
-                        <i class="fa-solid fa-chevron-right"></i>
-                        <a href="">Nivel 2</a>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="{{route('healthcare', ['nivel' => 'nivel-dos'])}}">Nivel 2</a>
                     </li>
                 </ul>
             </li>
 
             <li class="link-mb">
-                <i class="fa-solid fa-chevron-right"></i>
+                <i class="fa-solid fa-chevron-right mr-2"></i>
+                <a href="{{route('mvs')}}">Medical View System</a>
+            </li>
+
+            <li class="link-mb">
+                <i class="fa-solid fa-chevron-right mr-2"></i>
                 <a href="{{route('lyrium')}}">Lyrium</a>
             </li>
 
             <li class="link-mb">
-                <i class="fa-solid fa-chevron-right"></i>
-                <a href="">Productos</a>
+                <i class="fa-solid fa-chevron-right mr-2 rotate-0"></i>
+                <p class="inline">Productos</p>
+            </li>
+
+            <li class="hidden submenu-resp-pro">
+                <ul class="space-y-6 text-sm pl-5">
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Laboratorio</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Ingresos</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Medical View System</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Odontología</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Nutrición</a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="">Ginecología</a>
+                    </li>
+                </ul>
             </li>
         </ul>
 

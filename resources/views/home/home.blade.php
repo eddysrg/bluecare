@@ -195,7 +195,4 @@
         <div class="w-3 h-3 rounded-full bg-[#0A125E] aspect-square"></div>
     </div>
 </div>
-
-<a href="{{route('healthcare', ['nivel' => 'nivel-uno'])}}">Nivel 1</a>
-<a href="{{route('healthcare', ['nivel' => 'nivel-dos'])}}">Nivel 2</a>
 @endsection
