@@ -42,35 +42,35 @@
                 <ul class="text-white space-y-2">
                     <li class="uppercase flex items-center gap-2">
                         <div class="w-2">
-                            <img src="{{asset('storage/img/arrow.png')}}" alt="Arrow">
+                            <img src="{{asset('images/arrow.png')}}" alt="Arrow">
                         </div>
                         Inicio
                     </li>
 
                     <li class="uppercase flex items-center gap-2">
                         <div class="w-2">
-                            <img src="{{asset('storage/img/arrow.png')}}" alt="Arrow">
+                            <img src="{{asset('images/arrow.png')}}" alt="Arrow">
                         </div>
                         Exp. Clínico
                     </li>
 
                     <li class="uppercase flex items-center gap-2">
                         <div class="w-2">
-                            <img src="{{asset('storage/img/arrow.png')}}" alt="Arrow">
+                            <img src="{{asset('images/arrow.png')}}" alt="Arrow">
                         </div>
                         Medical View System
                     </li>
 
                     <li class="uppercase flex items-center gap-2">
                         <div class="w-2">
-                            <img src="{{asset('storage/img/arrow.png')}}" alt="Arrow">
+                            <img src="{{asset('images/arrow.png')}}" alt="Arrow">
                         </div>
                         Lyrium
                     </li>
 
                     <li class="uppercase flex items-center gap-2">
                         <div class="w-2">
-                            <img src="{{asset('storage/img/arrow.png')}}" alt="Arrow">
+                            <img src="{{asset('images/arrow.png')}}" alt="Arrow">
                         </div>
                         Productos
                     </li>
@@ -83,7 +83,7 @@
         <legend class="text-xs md:text-base font-light">© BlueCare. Todos los derechos reservados.</legend>
 
         <div class="w-20 md:w-40">
-            <img src="{{asset('storage/img/bluecare_logo_white.png')}}" alt="Blue Care Logo">
+            <img src="{{asset('images/bluecare_logo_white.png')}}" alt="Blue Care Logo">
         </div>
     </div>
 

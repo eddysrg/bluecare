@@ -3,7 +3,7 @@
 @section('content')
 <div class="grid grid-cols-1">
     <div class="col-start-1 col-end-2 row-start-1 row-end-2">
-        <img class="w-full h-full" src="{{asset('storage/img/hero_image.jpg')}}" alt="Banner Inicio Imagen">
+        <img class="w-full h-full" src="{{asset('images/hero_image.jpg')}}" alt="Banner Inicio Imagen">
     </div>
 
 
@@ -133,12 +133,11 @@
 
         <div class="grid grid-cols-[.2fr_.7fr_.1fr] grid-rows-[.1fr_.8fr_.5fr] sm:w-2/4 xl:w-auto">
             <div class="col-start-1 col-end-3 row-start-2 row-end-4 order-1">
-                <img class="w-full h-full " src="{{asset('storage/img/soluciones_imagen.png')}}"
-                    alt="Soluciones Imagen">
+                <img class="w-full h-full " src="{{asset('images/soluciones_imagen.png')}}" alt="Soluciones Imagen">
             </div>
 
             <div class="col-start-2 col-end-4 row-start-1 row-end-3">
-                <img class=" w-full h-full" src="{{asset('storage/img/fondo_soluciones_imagen.png')}}"
+                <img class=" w-full h-full" src="{{asset('images/fondo_soluciones_imagen.png')}}"
                     alt="Soluciones Imagen">
             </div>
         </div>
@@ -153,7 +152,7 @@
             before:aspect-square
             before:w-10
             before:h-10
-            before:bg-[url('../../public/storage/img/comas.png')] 
+            before:bg-[url('../../public/images/comas.png')] 
             before:bg-contain
             before:bg-no-repeat
             before:bg-center
@@ -172,7 +171,7 @@
             before:aspect-square
             before:w-10
             before:h-10
-            before:bg-[url('../../public/storage/img/comas.png')] 
+            before:bg-[url('../../public/images/comas.png')] 
             before:bg-contain
             before:bg-no-repeat
             before:bg-center

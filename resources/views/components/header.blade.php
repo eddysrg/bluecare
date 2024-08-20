@@ -5,13 +5,13 @@
 
 
         <a href="{{route('home')}}" class="w-32 xl:w-40">
-            <img src="{{asset('storage/img/bluecare_logo_white.png')}}" alt="Blue Care Logo">
+            <img src="{{asset('images/bluecare_logo_white.png')}}" alt="Blue Care Logo">
         </a>
 
         <div class="hidden lg:flex lg:items-center lg:gap-10 xl:gap-32">
             <div class="flex items-center gap-3">
                 <div class="w-9">
-                    <img src="{{asset('storage/img/atencion_icono.png')}}" alt="Atención Icono">
+                    <img src="{{asset('images/atencion_icono.png')}}" alt="Atención Icono">
                 </div>
 
                 <div class="text-white lg:text-xs 2xl:text-base ">
@@ -22,7 +22,7 @@
 
             <div class="flex items-center gap-3">
                 <div class="w-9">
-                    <img src="{{asset('storage/img/llamanos_icono.png')}}" alt="Atención Icono">
+                    <img src="{{asset('images/llamanos_icono.png')}}" alt="Atención Icono">
                 </div>
 
                 <div class="text-white lg:text-xs 2xl:text-base">
@@ -33,7 +33,7 @@
 
             <div class="flex items-center gap-3">
                 <div class="w-9">
-                    <img class="filter grayscale brightness-200" src="{{asset('storage/img/escribenos_icono.png')}}"
+                    <img class="filter grayscale brightness-200" src="{{asset('images/escribenos_icono.png')}}"
                         alt="Atención Icono">
                 </div>
 
