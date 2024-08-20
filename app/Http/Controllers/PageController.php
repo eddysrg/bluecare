@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\RouteName;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class PageController extends Controller
@@ -10,22 +12,22 @@ class PageController extends Controller
     public function lyrium()
     {
         $routeName = request()->route()->getName();
-        $json = Storage::get('links.json');
-        $links = json_decode($json, true);
-        $link = $links[$routeName] ?? [];
+        $linkRegister = RouteName::where('route_name', $routeName)->first();
 
-        session($link);
+        if ($linkRegister) {
+            session($linkRegister->toArray());
+        }
 
         return view('pages.lyrium');
     }
 
     public function healthcare($nivel)
     {
-        $json = Storage::get('links.json');
-        $links = json_decode($json, true);
-        $link = $links[$nivel] ?? [];
+        $linkRegister = RouteName::where('route_name', $nivel)->first();
 
-        session($link);
+        if ($linkRegister) {
+            session($linkRegister->toArray());
+        }
 
         return view('pages.healthcare');
     }
@@ -33,11 +35,11 @@ class PageController extends Controller
     public function mvs()
     {
         $routeName = request()->route()->getName();
-        $json = Storage::get('links.json');
-        $links = json_decode($json, true);
-        $link = $links[$routeName] ?? [];
+        $linkRegister = RouteName::where('route_name', $routeName)->first();
 
-        session($link);
+        if ($linkRegister) {
+            session($linkRegister->toArray());
+        }
 
         return view('pages.mvs');
     }
