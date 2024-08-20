@@ -1,13 +1,15 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
-import FastGlob from "fast-glob";
 
 export default defineConfig({
     plugins: [
         laravel({
             input: [
                 "resources/css/app.css",
-                FastGlob.sync(["resources/js/**/*.js"]),
+                "resources/js/app.js",
+                "resources/js/components/carousel.js",
+                "resources/js/components/navBarMenu.js",
+                "resources/js/components/responsiveMenu.js",
             ],
             refresh: true,
         }),

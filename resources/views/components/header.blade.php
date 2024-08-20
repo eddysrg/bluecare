@@ -173,32 +173,32 @@
                 <ul class="space-y-6 text-sm pl-5">
                     <li>
                         <i class="fa-solid fa-chevron-right mr-2"></i>
-                        <a href="">Laboratorio</a>
+                        <a>Laboratorio</a>
                     </li>
 
                     <li>
                         <i class="fa-solid fa-chevron-right mr-2"></i>
-                        <a href="">Ingresos</a>
+                        <a>Ingresos</a>
                     </li>
 
                     <li>
                         <i class="fa-solid fa-chevron-right mr-2"></i>
-                        <a href="">Medical View System</a>
+                        <a>Medical View System</a>
                     </li>
 
                     <li>
                         <i class="fa-solid fa-chevron-right mr-2"></i>
-                        <a href="">Odontología</a>
+                        <a>Odontología</a>
                     </li>
 
                     <li>
                         <i class="fa-solid fa-chevron-right mr-2"></i>
-                        <a href="">Nutrición</a>
+                        <a>Nutrición</a>
                     </li>
 
                     <li>
                         <i class="fa-solid fa-chevron-right mr-2"></i>
-                        <a href="">Ginecología</a>
+                        <a>Ginecología</a>
                     </li>
                 </ul>
             </li>

@@ -13,9 +13,7 @@ responsiveMenuIcon.addEventListener("click", () => {
 linksNavMobile.forEach((link) => {
     const anchorTag = link.lastElementChild.textContent;
 
-    link.addEventListener("click", (e) => {
-        e.preventDefault();
-
+    link.addEventListener("click", () => {
         if (anchorTag === "Exp. Clínico" || anchorTag === "Productos") {
             const arrow = link.querySelector(".fa-chevron-right");
             arrow.classList.toggle("rotate-0");
