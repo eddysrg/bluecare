@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\RouteName;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Storage;
 
 class PageController extends Controller
 {
@@ -29,7 +26,7 @@ class PageController extends Controller
             session($linkRegister->toArray());
         }
 
-        return view('pages.healthcare');
+        return view('pages.healthcare', ['nivel' => $nivel]);
     }
 
     public function mvs()
