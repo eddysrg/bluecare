@@ -32,14 +32,41 @@
     <img src="{{asset('images/nivel1-bloque2.png')}}" alt="Nivel 1 bloque 2">
 </div>
 
-<div class="px-8">
-    <h2 class="md:mt-20 mb-10 text-4xl text-[#0A125E] text-center">Perfiles</h2>
+<div class="py-8 md:pt-0">
+    <h2 class="md:mt-8 mb-10 text-4xl text-[#0A125E] text-center">Perfiles</h2>
 
-    <div class="bg-[#0144E8] p-5 h-48">
-        <div class="bg-[#0A125E] w-20 h-20 aspect-square rounded-full flex justify-center items-center">
-            <img src="{{asset('images/medico-icon.png')}}" alt="Medico Icon">
+    <div class="flex md:justify-center md:gap-3">
+        <div class="bg-[#0144E8] w-2/4 max-w-56 md:max-w-64 h-56 mx-auto md:mx-0 p-5">
+            <div class="bg-[#0A125E] w-12 h-12 aspect-square rounded-full flex justify-center items-center">
+                <img class="p-2" src="{{asset('images/medico-icon.png')}}" alt="Medico Icon">
+            </div>
+
+            <p class="text-white text-2xl text-center py-8 font-medium">Médico General</p>
         </div>
-        <p class="text-3xl text-white">Médico General</p>
+
+        <div class="hidden md:block bg-[#0144E8] w-2/4 max-w-56 md:max-w-64 h-56 mx-auto md:mx-0 p-5">
+            <div class="bg-[#0A125E] w-12 h-12 aspect-square rounded-full flex justify-center items-center">
+                <img class="p-2" src="{{asset('images/medico-icon.png')}}" alt="Medico Icon">
+            </div>
+
+            <p class="text-white text-2xl text-center py-8 font-medium">Odontólogo</p>
+        </div>
+
+        <div class="hidden md:block bg-[#0144E8] w-2/4 max-w-56 md:max-w-64 h-56 mx-auto md:mx-0 p-5">
+            <div class="bg-[#0A125E] w-12 h-12 aspect-square rounded-full flex justify-center items-center">
+                <img class="p-2" src="{{asset('images/medico-icon.png')}}" alt="Medico Icon">
+            </div>
+
+            <p class="text-white text-2xl text-center py-8 font-medium">Enfermería</p>
+        </div>
+
+        <div class="hidden md:block bg-[#0144E8] w-2/4 max-w-56 md:max-w-64 h-56 mx-auto md:mx-0 p-5">
+            <div class="bg-[#0A125E] w-12 h-12 aspect-square rounded-full flex justify-center items-center">
+                <img class="p-2" src="{{asset('images/medico-icon.png')}}" alt="Medico Icon">
+            </div>
+
+            <p class="text-white text-2xl text-center py-8 font-medium">Radiólogo</p>
+        </div>
     </div>
 </div>
 @else
