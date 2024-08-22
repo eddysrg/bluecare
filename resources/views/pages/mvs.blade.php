@@ -1,13 +1,27 @@
+<?php 
+    $cardMvsClasses = 'bg-[#0A125E] text-white px-3 py-5 md:p-5 rounded-lg text-center flex justify-center items-center shadow-xl';
+    $arrowStyle = 'fa-solid fa-arrow-right text-3xl md:text-5xl text-[#0A125E]';
+?>
+
 @extends('home.index')
 
 @section('content')
-<div class="w-2/3 grid grid-cols-[.5fr_.3fr_.5fr] grid-rows-[.2fr_1fr] py-8 mx-auto">
+<div class="md:w-2/3 px-8 md:px-0 md:grid md:grid-cols-[.5fr_.3fr_.5fr] md:grid-rows-[.2fr_1fr] py-8 mx-auto">
     <div class="col-start-1 col-end-3 row-start-1 row-end-3">
         <img class="w-full" src="{{asset('images/mvs-one.png')}}" alt="mvs one">
     </div>
 
-    <div class="bg-[#0144E8] text-slate-200 p-8 col-start-2 col-end-4 row-start-2 row-end-3 text-lg flex
-    items-center justify-center">
+    <div class="
+    bg-[#0144E8] 
+    text-slate-200 
+    p-8 col-start-2 
+    col-end-4 
+    row-start-2 
+    row-end-3 
+    text-lg 
+    flex
+    items-center 
+    justify-center">
         <p>
             <span class="font-medium text-white">Medical View System</span> es una colección de servicios inteligentes
             de
@@ -26,9 +40,17 @@
     <p class="text-4xl text-[#0A125E] text-center">Alcance de implementación</p>
     <h2 class="mb-10 text-4xl text-[#0A125E] text-center uppercase font-semibold">Medical View System</h2>
 
-    <div class="flex justify-center">
-        <div class="bg-[#0144E8] text-slate-200 p-8 text-lg flex
-        items-center justify-center w-2/5 mt-10">
+    <div class="px-8 md:px-0 flex flex-col-reverse md:flex-row md:justify-center">
+        <div class="
+        bg-[#0144E8] 
+        text-slate-200 
+        p-8 
+        text-lg 
+        flex
+        items-center 
+        justify-center 
+        md:w-2/5 
+        md:mt-10">
             <div>
                 <p class="mb-10">
                     El sistema <span class="font-medium text-white">Medical View System</span> contempla los siguientes
@@ -90,45 +112,55 @@
 <div class="py-10 flex flex-col items-center">
     <h2 class="mb-10 text-4xl text-[#0A125E] text-center">Funcionalidad de MVS</h2>
 
-    <div class="grid grid-cols-5 grid-rows-3 w-11/12 max-w-7xl">
-        <div class="bg-[#0A125E] text-white p-2 rounded-lg">
-            <p>Obtener Información</p>
+    <div class="md:w-11/12 md:max-w-5xl flex flex-col gap-20 px-8">
+        <div class="
+            flex
+            flex-col    
+            gap-5 
+            md:gap-0 
+            md:grid 
+            md:grid-cols-5 
+            md:grid-rows-3">
+
+            <div class="{{$cardMvsClasses}}">
+                <p>Obtener Información</p>
+            </div>
+
+            <div class="place-self-center rotate-90 md:rotate-0">
+                <i class="{{$arrowStyle}}"></i>
+            </div>
+
+            <div class="{{$cardMvsClasses}}">
+                <p>Crea visualizaciones y reportes</p>
+            </div>
+
+            <div class="place-self-center rotate-90 md:rotate-0">
+                <i class="{{$arrowStyle}}"></i>
+            </div>
+
+            <div class="{{$cardMvsClasses}}">
+                <p>Creación de dashboards</p>
+            </div>
+
+            <div class="place-self-center md:col-start-5 md:col-end-6 rotate-90">
+                <i class="{{$arrowStyle}}"></i>
+            </div>
+
+            <div class="{{$cardMvsClasses}} md:col-start-5 md:col-end-6">
+                <p>Crea aplicaciones y comparte su información con otras</p>
+            </div>
+
+            <div
+                class="place-self-center md:col-start-4 md:col-end-5 md:row-start-3 md:row-end-4 rotate-90 md:rotate-180">
+                <i class="{{$arrowStyle}}"></i>
+            </div>
+
+            <div class="{{$cardMvsClasses}} md:col-start-3 md:col-end-4 md:row-start-3 md:row-end-4">
+                <p>Analiza, monitorea, apoya a la toma de decisiones del negocio u organización</p>
+            </div>
         </div>
 
-        <div class="place-self-center">
-            <i class="fa-solid fa-arrow-right text-5xl"></i>
-        </div>
-
-        <div class="bg-[#0A125E] text-white p-2 rounded-lg">
-            <p>Crea visualizaciones y reportes</p>
-        </div>
-
-        <div class="place-self-center">
-            <i class="fa-solid fa-arrow-right text-5xl"></i>
-        </div>
-
-        <div class="bg-[#0A125E] text-white p-2 rounded-lg">
-            <p>Creación de dashboards</p>
-        </div>
-
-        <div class="place-self-center col-start-5 col-end-6 rotate-90">
-            <i class="fa-solid fa-arrow-right text-5xl"></i>
-        </div>
-
-        <div class="bg-[#0A125E] text-white p-2 rounded-lg col-start-5 col-end-6">
-            <p>Crea aplicaciones y comparte su información con otras</p>
-        </div>
-
-        <div class="place-self-center col-start-4 col-end-5 row-start-3 row-end-4 rotate-180">
-            <i class="fa-solid fa-arrow-right text-5xl"></i>
-        </div>
-
-        <div class="bg-[#0A125E] text-white p-2 rounded-lg col-start-3 col-end-4 row-start-3 row-end-4">
-            <p>Analiza, monitorea, apoya a la toma de decisiones del negocio u organización</p>
-        </div>
+        <a class="text-white uppercase bg-[#0144E8] p-5 rounded-lg self-center md:self-end">Más información</a>
     </div>
-
-    <a class="text-white uppercase bg-[#0144E8] p-5 rounded-lg self-end mt-10 mr-36">Más información</a>
-
 </div>
 @endsection
