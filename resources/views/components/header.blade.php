@@ -89,6 +89,12 @@
 
             <li class="hidden submenu-pro absolute top-full left-[35rem] z-20 bg-[#0A125E] w-60 p-5">
                 <ul class="space-y-6 text-sm pl-5">
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="{{route('productos')}}">Todos los productos</a>
+                    </li>
+
                     <li>
                         <i class="fa-solid fa-chevron-right mr-2"></i>
                         <a href="">Laboratorio</a>
@@ -171,6 +177,12 @@
 
             <li class="hidden submenu-resp-pro">
                 <ul class="space-y-6 text-sm pl-5">
+
+                    <li>
+                        <i class="fa-solid fa-chevron-right mr-2"></i>
+                        <a href="{{route('productos')}}">Todos los productos</a>
+                    </li>
+
                     <li>
                         <i class="fa-solid fa-chevron-right mr-2"></i>
                         <a>Laboratorio</a>
